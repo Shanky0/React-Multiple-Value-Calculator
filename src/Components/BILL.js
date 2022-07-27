@@ -8,10 +8,10 @@ const BILL = () => {
                 <div className='container' style={cont}>
                     <div style={{ textAlign: "center" }}>
                         <Link to='/' className='btn ' style={btn}> &#8592; Go Back</Link>
-                        <Link to='/BMI' className='btn ' style={btn}>BMI Calculation</Link>
-                        <Link to='/EMI' className='btn ' style={btn}>EMI Calculation</Link>
+                        <Link to='/BMI' className='btn ' style={btn}>BMI Calculator</Link>
+                        <Link to='/EMI' className='btn ' style={btn}>EMI Calculator</Link>
                     </div>
-                    <h1 style={{ textAlign: "center", color: "white", border: "1px solid white", width: "60%", margin: "50px auto", background: "linear-gradient(90deg, #0b2e5c, #4c3b6f, #7e487a, #aa587d, #cf6f7b, #ea8c78, #faaf78, #ffd582)" }}>BILL Calculator</h1>
+                    <h1 style={{ textAlign: "center", color: "white", border: "1px solid white", width: "60%", margin: "50px auto", }}>BILL Calculator</h1>
                     <BillDisplay />
                 </div>
             </div>
@@ -74,7 +74,7 @@ const BillDisplay = () => {
 }
 
 const cont = {
-    backgroundImage: "url(https://videohive.img.customer.envatousercontent.com/files/a520307e-8e7a-4b9c-9cb5-60cb91405691/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=8faba409bcd263eeb170d860015ee274)",
+    backgroundImage: "url(https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-zoom-virtual-background-_Tcjok-d9b4.jpg)",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     border: "1px solid white",

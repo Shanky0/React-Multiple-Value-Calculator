@@ -8,10 +8,10 @@ const BMI = () => {
             <div className='container' style={cont}>
                 <div style={{ textAlign: "center" }}>
                     <Link to='/' className='btn btn-outline-dark' style={btn}> &#8592; Go Back</Link>
-                    <Link to='/BILL' className='btn btn-outline-dark' style={btn}>BILL Calculation</Link>
-                    <Link to='/EMI' className='btn btn-outline-dark' style={btn}>EMI Calculation</Link>
+                    <Link to='/BILL' className='btn btn-outline-dark' style={btn}>BILL Calculator</Link>
+                    <Link to='/EMI' className='btn btn-outline-dark' style={btn}>EMI Calculator</Link>
                 </div>
-                <h1 style={{ textAlign: "center", marginTop: "50px", color: "#1a759f" }}>BMI Calculator</h1>
+                <h1 style={{ textAlign: "center", marginTop: "25px", color: "#1a759f" }}>BMI Calculator</h1>
                 <BmDisplay />
             </div>
         </div>
@@ -89,7 +89,6 @@ const BmDisplay = () => {
     return (
         <>
             <div style={bmi}>
-
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label" style={{ fontWeight: "800", fontSize: "1.6em" }} >Weight -</label>
                     <span ><select class="form-select" style={span} id='win' onClick={select}>
@@ -126,7 +125,7 @@ const cont = {
     boxShadow: " 0px 0px 102px 25px rgba(80,98,199,1)",
 }
 const bmi = {
-    margin: "5% 20%",
+    margin: "2% 20%",
     fontSize: "20px",
 }
 const btn = {
