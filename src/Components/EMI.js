@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import BMI from './BMI';
-import BILL from './BILL';
-import HOME from './HOME';
+
 const EMI = () => {
     return (
         <>

@@ -1,29 +1,26 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
-import BILL from './BILL';
-import EMI from './EMI';
-import HOME from './HOME';
 
 const BMI = () => {
     return (
         <>
+            <div style={{ background: "url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/4c032e28008799.56e41b3bbd979.gif)", backgroundSize: "cover" }}>
             <div className='container' style={cont}>
                 <div style={{ textAlign: "center" }}>
                     <Link to='/' className='btn btn-outline-dark' style={btn}> &#8592; Go Back</Link>
                     <Link to='/BILL' className='btn btn-outline-dark' style={btn}>BILL Calculation</Link>
                     <Link to='/EMI' className='btn btn-outline-dark' style={btn}>EMI Calculation</Link>
                 </div>
+                <h1 style={{ textAlign: "center", marginTop: "50px", color: "#1a759f" }}>BMI Calculator</h1>
                 <BmDisplay />
             </div>
-
+        </div>
         </>
 
     )
 }
 
 export default BMI;
-
 
 const BmDisplay = () => {
     let win, hin, inpW, inpH, BMI;
@@ -88,9 +85,11 @@ const BmDisplay = () => {
             }
         }
     }
+
     return (
         <>
             <div style={bmi}>
+
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label" style={{ fontWeight: "800", fontSize: "1.6em" }} >Weight -</label>
                     <span ><select class="form-select" style={span} id='win' onClick={select}>
@@ -112,7 +111,7 @@ const BmDisplay = () => {
                 </div>
                 <button className='btn btn-dark' style={btn} id="calculate" onClick={calculate}> Calculate</button>
                 <h2 id="result"> </h2>
-                <h3 id="bm"></h3>
+                <h3 id="bm"> </h3>
             </div>
 
         </>
@@ -124,11 +123,11 @@ const cont = {
     border: "1px solid white",
     width: "70%",
     height: "100vh",
+    boxShadow: " 0px 0px 102px 25px rgba(80,98,199,1)",
 }
 const bmi = {
-    margin: "8% 20%",
+    margin: "5% 20%",
     fontSize: "20px",
-
 }
 const btn = {
     marginTop: "3vh",
@@ -136,5 +135,4 @@ const btn = {
 }
 const span = {
     width: "50%",
-
 }
