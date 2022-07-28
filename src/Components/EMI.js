@@ -30,13 +30,18 @@ const EmiDisplay = () => {
         month = Number(document.querySelector('#month').value);
         year = Number(document.querySelector('#year').value);
 
-        if (amount == "" || interest == "" || month == "" || year == "") {
+        if (amount == "" || interest == "") {
             document.querySelector("#result").innerHTML = "Please fill all fields."
             document.querySelector("#result").style = "font-size:16px;color:red;margin:3%;"
         } else if (amount === -1 || interest === -1 || month === -1 || year === -1) {
             document.querySelector("#result").innerHTML = "Please fill valid values in the fields."
             document.querySelector("#result").style = "font-size:16px;color:red;margin:3%;"
         } else {
+            if(month =="")
+            month = 0;
+            if(year == "")
+            year = 0;
+            
             rate = (interest / 12) / 100;
             time = (year * 12) + month;
             monthly = ((amount * rate * (Math.pow((1 + rate), time))) / (Math.pow((1 + rate), time) - 1));
